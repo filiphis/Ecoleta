@@ -1,0 +1,118 @@
+.background {
+  background-image: url('/assets/images/background.svg');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+@media (max-width: 900px) {
+  .background {
+    background-position-x: 70vw;
+  }
+}
+/* ############################ */
+/* ########## Header ########## */
+/* ############################ */
+.header {
+  margin-top: 4.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logoLink{}
+.header__logoImage{}
+.header__registerWrapper{
+  display: flex;
+  align-items: center;
+}
+.header__registerIcon{
+  display: inline-block;
+  background-image: url('/assets/images/login-icon.svg');
+  background-color: transparent;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 1rem;
+}
+.header__registerLink{
+
+}
+
+
+
+/* ############################ */
+/* ####### Marketplace ######## */
+/* ############################ */
+.marketplace {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+.marketplace__contentWrapper {
+  max-width: 56rem;
+}
+
+.marketplace__title {
+  margin-bottom: 2.4rem;
+}
+
+.marketplace__description {
+  max-width: 45rem;
+  margin-bottom: 4rem;
+}
+
+.marketplace__button {
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.button__icon {
+  background-image: url('/assets/images/search-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3.6rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: rgba(0, 0, 0, 0.20);
+  border-top-left-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+}
+
+.button__text {
+  padding: 2.6rem 4.0rem;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+  .content-wrapper {
+    align-items: center;
+  }
+  .marketplace__contentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .marketplace__contentWrapper {
+    margin-bottom: 5rem;
+  }
+
+  .header__registerWrapper {
+    position: absolute;
+    bottom: 4.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

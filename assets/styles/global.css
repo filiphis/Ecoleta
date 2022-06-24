@@ -2,6 +2,9 @@
 
 *{
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
 ul,
@@ -9,14 +12,139 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+.content-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 :root {
   --greenpeace: #34CB79;
+  --greenpeace-hover: #34cb78b3;
   --desaturated: #E1FAEC;
-  --titles: #322153;
-  --texts: #6C6C80;
+  --title: #322153;
+  --text: #6C6C80;
   --text-support: #A0A0B2;
-  --blocks: #FFFFFF;
+  --block: #FFFFFF;
   --background: #F0F0F5;
 
   font-size: 62.5%;
 }
+
+body {
+  background-color: var(--background);
+}
+
+.content-wrapper {
+  max-width: 112rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+button {
+  transition: transform .25s;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translateY(-.3rem);
+}
+
+@media (max-width: 900px) {
+  .content-wrapper {
+    padding: 0 2%;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------- */
+
+/* Font Family */
+.marketplace__title {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a,
+button,
+body,
+.header__registerLink,
+.marketplace__description {
+  font-family: 'Roboto';
+}
+/* END Font Family */
+
+
+/* Font Size */
+body,
+button,
+a,
+.marketplace__button {
+  font-size: 1.6rem;
+}
+.marketplace__title{
+  font-size: 5.4rem;
+}
+.marketplace__description {
+  font-size: 2.4rem;
+}
+/* END Font Size */
+
+
+/* Text Colors */
+.marketplace__title,
+.header__registerLink {
+  color: var(--title);
+}
+.modal__title,
+.marketplace__button {
+  color: var(--block);
+}
+.marketplace__description {
+  color: var(--text);
+}
+/* END Text Colors */
+
+
+/* Background Colors */
+.marketplace__button {
+  background-color: var(--greenpeace);
+}
+/* END Background Colors */
+
+
+/* Weight */
+.marketplace__title,
+.modal__title,
+.header__registerLink {
+  font-weight: bold;
+}
+/* END Weight */
+
+
+/* Border Radius */
+.marketplace__button {
+  border-radius: 0.8rem;
+}
+/* END Border Radius */
+
+
+
+
+
+
+
+
+
+
+
