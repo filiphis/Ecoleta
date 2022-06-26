@@ -8,7 +8,7 @@ const getBrazilianStates = async () => {
   const brazilianStates = await response.json();
 
   brazilianStates.forEach((state) => {
-    stateSelectElement.innerHTML += `<option value="${state.id}">${state.nome}</option>`;
+    stateSelectElement.innerHTML += `<option class="entityData__option" value="${state.id}">${state.nome}</option>`;
   });
 };
 
@@ -26,7 +26,7 @@ async function getCitiesByStateId(event) {
   const getCities = await response.json();
 
   getCities.forEach((city) => {
-    citySelectElement.innerHTML += `<option value="${city.id}">${city.nome}</option>`;
+    citySelectElement.innerHTML += `<option class="entityData__option" value="${city.id}">${city.nome}</option>`;
   });
   citySelectElement.removeAttribute("disabled");
 }
