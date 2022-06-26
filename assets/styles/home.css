@@ -9,33 +9,7 @@
     background-position-x: 70vw;
   }
 }
-/* ############################ */
-/* ########## Header ########## */
-/* ############################ */
-.header {
-  margin-top: 4.6rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.header__logoLink{}
-.header__logoImage{}
-.header__registerWrapper{
-  display: flex;
-  align-items: center;
-}
-.header__registerIcon{
-  display: inline-block;
-  background-image: url('/assets/images/login-icon.svg');
-  background-color: transparent;
-  width: 2.4rem;
-  height: 2.4rem;
-  margin-right: 1rem;
-}
-.header__registerLink{
-
-}
 
 
 
