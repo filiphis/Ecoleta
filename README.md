@@ -33,6 +33,7 @@
 ## O que aprendi ?
 
 <!-- <p>:heavy_check_mark: Criar um banco utilizando o SQLite para persistir os dados ( CRUD ).</p> -->
+<p>:heavy_check_mark: Buscar Estados e Cidades na API do IBGE e lista-los no select do HTML</p>
 
 ## O que preciso melhorar ?
 
