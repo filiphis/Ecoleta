@@ -1,0 +1,63 @@
+.register {
+  max-width: 73.6rem;
+  margin: 0 auto;
+  margin-top: 7.6rem;
+  padding: 6.4rem;
+}
+
+.register__title {
+  margin-bottom: 6.4rem;
+}
+
+.register__subtitle {
+  margin-bottom: 4.6rem;
+}
+
+.entityData {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.register__fieldGroup {
+  display: flex;
+  flex: 1;
+}
+
+.register__fieldGroup .register__field:nth-child(1) {
+  margin-right: 2.4rem;
+}
+
+.register__field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.register__field--address {
+  flex-grow: 2;
+}
+
+
+.entityData__label {
+  margin-bottom: 0.8rem;
+}
+
+.entityData__input,
+.entityData__select {
+  padding: 1.8rem 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.entityData__select option {
+  background-color: var(--block);
+}
+.entityData__input:focus {
+  outline: 1px solid rgba(108, 108, 128, 0.7);
+}
+
+
+
+.collectItems {
+  margin-bottom: 6.4rem;
+}

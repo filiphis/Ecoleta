@@ -35,10 +35,6 @@ a {
   font-size: 62.5%;
 }
 
-.background {
-  background-color: var(--background);
-}
-
 .content-wrapper {
   max-width: 112rem;
   margin: 0 auto;
@@ -71,7 +67,9 @@ button:hover {
 /* ------------------------- */
 
 /* Font Family */
-.marketplace__title {
+.marketplace__title,
+.register__title,
+.register__subtitle {
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -79,38 +77,53 @@ a,
 button,
 body,
 .header__registerLink,
-.marketplace__description {
+.marketplace__description,
+.entityData__label,
+.entityData__input,
+.entityData__select {
   font-family: 'Roboto';
 }
 /* END Font Family */
 
 
 /* Font Size */
+.entityData__label {
+  font-size: 1.4rem;
+}
 body,
 button,
 a,
 .marketplace__button {
   font-size: 1.6rem;
 }
+.marketplace__description,
+.register__subtitle {
+  font-size: 2.4rem;
+}
+.register__title {
+  font-size: 3.6rem;
+}
 .marketplace__title{
   font-size: 5.4rem;
-}
-.marketplace__description {
-  font-size: 2.4rem;
 }
 /* END Font Size */
 
 
 /* Text Colors */
 .marketplace__title,
-.header__registerLink {
+.header__registerLink,
+.register__title,
+.register__subtitle {
   color: var(--title);
 }
 .modal__title,
 .marketplace__button {
   color: var(--block);
 }
-.marketplace__description {
+.marketplace__description,
+.entityData__label,
+.entityData__input,
+.entityData__select {
   color: var(--text);
 }
 /* END Text Colors */
@@ -120,20 +133,32 @@ a,
 .marketplace__button {
   background-color: var(--greenpeace);
 }
+.register {
+  background-color: var(--block);
+}
+.background ,
+.entityData__input,
+.entityData__select {
+  background-color: var(--background);
+}
 /* END Background Colors */
 
 
 /* Weight */
 .marketplace__title,
 .modal__title,
-.header__registerLink {
+.header__registerLink,
+.register__title,
+.register__subtitle {
   font-weight: bold;
 }
 /* END Weight */
 
 
 /* Border Radius */
-.marketplace__button {
+.marketplace__button,
+.entityData__input,
+.entityData__select {
   border-radius: 0.8rem;
 }
 /* END Border Radius */

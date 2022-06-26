@@ -13,6 +13,7 @@
   <link rel="shortcut icon" href="/assets/images/simbolo.svg" type="image/x-icon">
   <link rel="stylesheet" href="/assets/styles/global.css">
   <link rel="stylesheet" href="/assets/styles/header.css">
+  <link rel="stylesheet" href="/assets/styles/register.css">
   <title>Cadastro do ponto de coleta | Ecoleta</title>
 </head>
 
@@ -33,35 +34,35 @@
         <h1 class="register__title">Cadastro do ponto de coleta</h1>
 
         <form action="">
-          <fieldset>
+          <fieldset class="entityData">
             <legend class="register__subtitle">Dados da entidade</legend>
 
             <div class="register__field">
-              <label for="entity-name">Nome da entidade</label>
-              <input id="entity-name" name="entity-name" type="text">
+              <label class="entityData__label" for="entity-name">Nome da entidade</label>
+              <input class="entityData__input" id="entity-name" name="entity-name" type="text">
             </div>
             <div class="register__fieldGroup">
-              <div class="register__field">
-                <label for="address">Endereço</label>
-                <input name="address" id="address" type="text">
+              <div class="register__field register__field--address">
+                <label class="entityData__label" for="address">Endereço</label>
+                <input class="entityData__input" name="address" id="address" type="text">
               </div>
               <div class="register__field">
-                <label for="number">Número</label>
-                <input id="number" name="number" type="number">
+                <label class="entityData__label" for="number">Número</label>
+                <input class="entityData__input" id="number" name="number" type="number">
               </div>
             </div>
 
             <div class="register__fieldGroup">
               <div class="register__field">
-                <label for="state">Estado</label>
-                <select name="state" id="state">
-                  <option value="" selected>PR</option>
-                  <option value="">SP</option>
+                <label class="entityData__label" for="state">Estado</label>
+                <select class="entityData__select" name="state" id="state">
+                  <option value="" selected>Selecione seu estado</option>
+                  <option value="">Selecione seu estado</option>
                 </select>
               </div>
               <div class="register__field">
-                <label for="city">Cidade</label>
-                <select name="city" id="city" disabled>
+                <label class="entityData__label" for="city">Cidade</label>
+                <select class="entityData__select" name="city" id="city" disabled>
 
                 </select>
               </div>
