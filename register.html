@@ -39,30 +39,30 @@
 
             <div class="register__field">
               <label class="entityData__label" for="entity-name">Nome da entidade</label>
-              <input class="entityData__input" id="entity-name" name="entity-name" type="text">
+              <input class="entityData__input" id="entity-name" name="entity-name" type="text" required>
             </div>
             <div class="register__fieldGroup">
               <div class="register__field register__field--address">
                 <label class="entityData__label" for="address">Endereço</label>
-                <input class="entityData__input" name="address" id="address" type="text">
+                <input class="entityData__input" name="address" id="address" type="text" required>
               </div>
               <div class="register__field">
                 <label class="entityData__label" for="number">Número</label>
-                <input class="entityData__input" id="number" name="number" type="number">
+                <input class="entityData__input" id="number" name="number" type="number" required>
               </div>
             </div>
 
             <div class="register__fieldGroup">
               <div class="register__field">
                 <label class="entityData__label" for="state">Estado</label>
-                <select class="entityData__select" name="state" id="state">
+                <select class="entityData__select" name="state" id="state" required>
                   <option value="" selected>Selecione seu estado</option>
                 </select>
               </div>
               <div class="register__field">
                 <label class="entityData__label" for="city">Cidade</label>
-                <select class="entityData__select" name="city" id="city" disabled>
-
+                <select class="entityData__select" name="city" id="city" disabled required>
+                  <option value="0" selected>Selecione sua cidade</option>
                 </select>
               </div>
             </div>

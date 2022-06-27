@@ -24,9 +24,19 @@ async function getCitiesByStateId(event) {
   );
 
   const getCities = await response.json();
+  if (getCities.length == 0) {
+    console.log("getCities.length == 0");
+    citySelectElement.setAttribute("disabled", "true");
+    citySelectElement.disabled = true;
+    console.log(citySelectElement.getAttribute("disabled"));
+  }
 
+  citySelectElement.innerHTML = `<option value="" selected>Selecione sua cidade</option>`;
   getCities.forEach((city) => {
-    citySelectElement.innerHTML += `<option class="entityData__option" value="${city.id}">${city.nome}</option>`;
+    citySelectElement.innerHTML += `<option class="entityData__option" value="${city.nome}">${city.nome}</option>`;
   });
-  citySelectElement.removeAttribute("disabled");
+
+  if (getCities.length > 0) {
+    citySelectElement.removeAttribute("disabled");
+  }
 }

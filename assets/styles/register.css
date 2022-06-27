@@ -49,9 +49,25 @@
   margin-bottom: 2.4rem;
 }
 
-.entityData__select option {
-  background-color: var(--block);
+.entityData__select:disabled {
+  background-color: rgba(202, 202, 207, 0.6);
+  color: #acacbc;
 }
+
+
+.entityData__option {
+  background-color: var(--block);
+  color: #ffffff;
+  position: relative;
+}
+
+.entityData__option::after {
+  content: 'AAA';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+}
+
 .entityData__input:focus {
   outline: 1px solid rgba(108, 108, 128, 0.7);
 }
