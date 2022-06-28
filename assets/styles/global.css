@@ -45,7 +45,7 @@ a {
   height: auto;
 }
 
-button {
+button{
   transition: transform .25s;
 }
 
@@ -74,7 +74,9 @@ button:hover {
 .marketplace__title,
 .register__title,
 .register__subtitle,
-.collectItems__subtitle {
+.collectItems__subtitle,
+.searchResults__title,
+.searchResults__itemTitle {
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -89,7 +91,9 @@ body,
 .collectItems__text,
 .register__button,
 .collectItems__description,
-.modal__title {
+.modal__title,
+.searchResults__colectItems,
+.searchResults__address {
   font-family: 'Roboto';
 }
 /* END Font Family */
@@ -107,16 +111,20 @@ a,
 .entityData__select,
 .register__button,
 .collectItems__description,
-.modal__button  {
+.modal__button,
+.searchResults__address  {
   font-size: 1.6rem;
 }
 .marketplace__description,
 .register__subtitle,
-.collectItems__subtitle {
+.collectItems__subtitle,
+.searchResults__title,
+.searchResults__colectItems {
   font-size: 2.4rem;
 }
 .register__title,
-.modal__title {
+.modal__title,
+.searchResults__itemTitle {
   font-size: 3.6rem;
 }
 .marketplace__title{
@@ -131,7 +139,9 @@ a,
 .register__title,
 .register__subtitle,
 .collectItems__subtitle,
-.collectItems__description {
+.collectItems__description,
+.searchResults__title,
+.searchResults__itemTitle {
   color: var(--title);
 }
 .modal__title,
@@ -145,8 +155,12 @@ a,
 .entityData__label,
 .entityData__input,
 .entityData__select,
-.collectItems__text {
+.collectItems__text,
+.searchResults__address {
   color: var(--text);
+}
+.searchResults__colectItems {
+  color: var(--greenpeace);
 }
 /* END Text Colors */
 
@@ -177,7 +191,9 @@ a,
 .collectItems__subtitle,
 .register__button,
 .modal__title,
-.modal__button {
+.modal__button,
+.searchResults__title,
+.searchResults__itemTitle {
   font-weight: bold;
 }
 /* END Weight */

@@ -13,7 +13,7 @@
   <link rel="shortcut icon" href="/assets/images/simbolo.svg" type="image/x-icon">
   <link rel="stylesheet" href="/assets/styles/global.css">
   <link rel="stylesheet" href="/assets/styles/header.css">
-  <link rel="stylesheet" href="/assets/styles/home.css">
+  <link rel="stylesheet" href="/assets/styles/index.css">
   <link rel="stylesheet" href="/assets/styles/modal.css">
   <title>Seu marketplace de coleta de resíduos | Ecoleta</title>
 </head>
@@ -26,20 +26,20 @@
         <a class="header__logoLink" href="index.html">
           <img class="header__logoImage" src="assets/images/logo.svg" alt="Logo ecoleta">
         </a>
-        <div class="header__registerWrapper">
+        <a class="header__registerWrapper header__registerLink" href="/register.html">
           <span class="header__registerIcon"></span>
-          <a class="header__registerLink" href="/register.html">Cadastre um ponto de coleta</a>
-        </div>
+          Cadastre um ponto de coleta
+        </a>
       </header>
 
       <main class="marketplace">
         <div class="marketplace__contentWrapper">
           <h1 class="marketplace__title">Seu marketplace de coleta de resíduos.</h1>
           <p class="marketplace__description">Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.</p>
-          <button class="marketplace__button" data-searchButton>
+          <a class="marketplace__button" data-searchButton>
             <span class="button__icon"></span>
             <span class="button__text">Pesquisar pontos de coleta</span>
-          </button>
+          </a>
         </div>
       </main>
     </div>
@@ -54,7 +54,7 @@
         <span class="modal__title">Pontos de coleta</span>
         <a data-closeModal class="modal__close" href="#">Fechar</a>
       </div>
-      <form data-js="register__form" class="register__form modal__form" action="register.html" method="GET">
+      <form data-js="register__form" class="register__form modal__form" action="/search-results.html" method="GET">
         <label class="entityData__label sr-only" for="state">Estado</label>
         <select class="entityData__select modal__select" name="state" id="state" required>
           <option value="" selected>Selecione seu estado</option>
