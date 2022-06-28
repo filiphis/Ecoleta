@@ -33,12 +33,13 @@ a {
   --text-support: #A0A0B2;
   --block: #FFFFFF;
   --background: #F0F0F5;
+  --modalBackground: #0e0a14f2;
 
   font-size: 62.5%;
 }
 
 .content-wrapper {
-  max-width: 77.778%;
+  width: 77.778%;
   margin: 0 auto;
   padding: 0 1rem;
   height: auto;
@@ -87,7 +88,8 @@ body,
 .entityData__select,
 .collectItems__text,
 .register__button,
-.collectItems__description {
+.collectItems__description,
+.modal__title {
   font-family: 'Roboto';
 }
 /* END Font Family */
@@ -104,7 +106,8 @@ a,
 .marketplace__button,
 .entityData__select,
 .register__button,
-.collectItems__description  {
+.collectItems__description,
+.modal__button  {
   font-size: 1.6rem;
 }
 .marketplace__description,
@@ -112,7 +115,8 @@ a,
 .collectItems__subtitle {
   font-size: 2.4rem;
 }
-.register__title {
+.register__title,
+.modal__title {
   font-size: 3.6rem;
 }
 .marketplace__title{
@@ -132,7 +136,9 @@ a,
 }
 .modal__title,
 .marketplace__button,
-.register__button {
+.register__button,
+.modal__title,
+.modal__button {
   color: var(--block);
 }
 .marketplace__description,
@@ -147,7 +153,8 @@ a,
 
 /* Background Colors */
 .marketplace__button,
-.register__button {
+.register__button,
+.modal__button {
   background-color: var(--greenpeace);
 }
 .register {
@@ -168,7 +175,9 @@ a,
 .register__title,
 .register__subtitle,
 .collectItems__subtitle,
-.register__button {
+.register__button,
+.modal__title,
+.modal__button {
   font-weight: bold;
 }
 /* END Weight */
@@ -179,7 +188,8 @@ a,
 .entityData__input,
 .entityData__select,
 .collectItems__item,
-.register__button {
+.register__button,
+.modal__button {
   border-radius: 0.8rem;
 }
 /* END Border Radius */
@@ -190,7 +200,19 @@ a,
 
 
 
-
-
-
+/* ############################ */
+/* ######## Utilities ######### */
+/* ############################ */
+.sr-only {
+  font-size: 0.01px;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
 

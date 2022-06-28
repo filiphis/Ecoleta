@@ -24,6 +24,7 @@ const getSelectedCollectionItems = () => {
     "[data-js=collectItemsSelected]"
   );
   hidenInputToSendValues.value = getSelectItemsValues;
+
   return getSelectItemsValues;
 };
 
