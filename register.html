@@ -33,7 +33,7 @@
       <main class="register">
         <h1 class="register__title">Cadastro do ponto de coleta</h1>
 
-        <form action="">
+        <form data-js="register__form" class="register__form" action="register.html" method="GET">
           <fieldset class="entityData">
             <legend class="register__subtitle">Dados da entidade</legend>
 
@@ -70,36 +70,59 @@
 
 
           <fieldset class="collectItems">
-            <div>
-              <legend class="register__subtitle">Ítens de coleta</legend>
-              <span>Selecione um ou mais ítens abaixo</span>
+            <div class="collectItems__header ">
+              <legend class="collectItems__subtitle">Ítens de coleta</legend>
+              <span class="collectItems__text">Selecione um ou mais ítens abaixo</span>
             </div>
 
             <div class="collectItems__wrapper">
-              <label class="collectItems__label" for="lampadas">Lâmpadas<input class="collectItems__checkbox"
-                  type="checkbox" name="collect-items" id="lampadas"></label>
-              <label class="collectItems__label" for="pilhas-baterias">Pilhas e Baterias<input
-                  class="collectItems__checkbox" type="checkbox" name="collect-items" id="pilhas-baterias"></label>
-              <label class="collectItems__label" for="papeis-papelao">Papéis e Papelão<input
-                  class="collectItems__checkbox" type="checkbox" name="collect-items" id="papeis-papelao"></label>
-              <label class="collectItems__label" for="eletronicos">Resíduos Eletrônicos<input
-                  class="collectItems__checkbox" type="checkbox" name="collect-items" id="eletronicos"></label>
-              <label class="collectItems__label" for="organicos">Resíduos Orgânicos<input class="collectItems__checkbox"
-                  type="checkbox" name="collect-items" id="organicos"></label>
-              <label class="collectItems__label" for="oleo">Óleo de Cozinha<input class="collectItems__checkbox"
-                  type="checkbox" name="collect-items" id="oleo"></label>
+              <ul class="collectItems__list">
+
+                <li class="collectItems__item" data-collectItemId="1" data-collectItemName="lampadas"
+                  data-collectItemName="lampadas">
+                  <img class="collectItems__image" src="/assets/images/lampadas.svg" alt="Lâmpadas">
+                  <span class="collectItems__description">Lâmpadas</span>
+                </li>
+
+                <li class="collectItems__item" data-collectItemId="2" data-collectItemName="pilhas-baterias">
+                  <img class="collectItems__image" src="/assets/images/baterias.svg" alt="Pilhas e Baterias">
+                  <span class="collectItems__description">Pilhas e Baterias</span>
+                </li>
+
+                <li class="collectItems__item" data-collectItemId="3" data-collectItemName="papeis-papelao">
+                  <img class="collectItems__image" src="/assets/images/papeis-papelao.svg" alt="Papéis e Papelão">
+                  <span class="collectItems__description">Papéis e Papelão</span>
+                </li>
+
+                <li class="collectItems__item" data-collectItemId="4" data-collectItemName="eletronicos">
+                  <img class="collectItems__image" src="/assets/images/eletronicos.svg" alt="Resíduos Eletrônicos">
+                  <span class="collectItems__description">Resíduos Eletrônicos</span>
+                </li>
+
+                <li class="collectItems__item" data-collectItemId="5" data-collectItemName="organicos">
+                  <img class="collectItems__image" src="/assets/images/organincos.svg" alt="Resíduos Orgânicos">
+                  <span class="collectItems__description">Resíduos Orgânicos</span>
+                </li>
+
+                <li class="collectItems__item" data-collectItemId="6" data-collectItemName="oleo">
+                  <img class="collectItems__image" src="/assets/images/oleo.svg" alt="Óleo de Cozinha">
+                  <span class="collectItems__description">Óleo de Cozinha</span>
+                </li>
+
+              </ul>
+
+              <input data-js="collectItemsSelected" type="hidden" name="">
             </div>
           </fieldset>
 
           <button class="register__button" type="submit">Cadastrar ponto de coleta</button>
         </form>
-
-
       </main>
     </div>
   </div>
 
-  <script src="/assets/scripts/register.js"></script>
+  <script src="/assets/scripts/register_getCities.js"></script>
+  <script src="assets/scripts/register_selectedItems.js"></script>
 </body>
 
 </html>

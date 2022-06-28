@@ -38,9 +38,10 @@ a {
 }
 
 .content-wrapper {
-  max-width: 112rem;
+  max-width: 77.778%;
   margin: 0 auto;
   padding: 0 1rem;
+  height: auto;
 }
 
 button {
@@ -71,7 +72,8 @@ button:hover {
 /* Font Family */
 .marketplace__title,
 .register__title,
-.register__subtitle {
+.register__subtitle,
+.collectItems__subtitle {
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -82,25 +84,32 @@ body,
 .marketplace__description,
 .entityData__label,
 .entityData__input,
-.entityData__select {
+.entityData__select,
+.collectItems__text,
+.register__button,
+.collectItems__description {
   font-family: 'Roboto';
 }
 /* END Font Family */
 
 
 /* Font Size */
-.entityData__label {
+.entityData__label,
+.collectItems__text {
   font-size: 1.4rem;
 }
 body,
 button,
 a,
 .marketplace__button,
-.entityData__select  {
+.entityData__select,
+.register__button,
+.collectItems__description  {
   font-size: 1.6rem;
 }
 .marketplace__description,
-.register__subtitle {
+.register__subtitle,
+.collectItems__subtitle {
   font-size: 2.4rem;
 }
 .register__title {
@@ -116,24 +125,29 @@ a,
 .marketplace__title,
 .header__registerLink,
 .register__title,
-.register__subtitle {
+.register__subtitle,
+.collectItems__subtitle,
+.collectItems__description {
   color: var(--title);
 }
 .modal__title,
-.marketplace__button {
+.marketplace__button,
+.register__button {
   color: var(--block);
 }
 .marketplace__description,
 .entityData__label,
 .entityData__input,
-.entityData__select {
+.entityData__select,
+.collectItems__text {
   color: var(--text);
 }
 /* END Text Colors */
 
 
 /* Background Colors */
-.marketplace__button {
+.marketplace__button,
+.register__button {
   background-color: var(--greenpeace);
 }
 .register {
@@ -152,7 +166,9 @@ a,
 .modal__title,
 .header__registerLink,
 .register__title,
-.register__subtitle {
+.register__subtitle,
+.collectItems__subtitle,
+.register__button {
   font-weight: bold;
 }
 /* END Weight */
@@ -161,7 +177,9 @@ a,
 /* Border Radius */
 .marketplace__button,
 .entityData__input,
-.entityData__select {
+.entityData__select,
+.collectItems__item,
+.register__button {
   border-radius: 0.8rem;
 }
 /* END Border Radius */
