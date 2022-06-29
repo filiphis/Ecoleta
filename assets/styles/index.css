@@ -1,20 +1,14 @@
 .content-wrapper {
   height: 100vh;
+  max-width: 112rem;
 }
 
 .background {
   background-image: url('/assets/images/background.svg');
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position-x: min(100%, 40vw);
+  background-position-y: bottom;
 }
-
-@media (max-width: 900px) {
-  .background {
-    background-position-x: 70vw;
-  }
-}
-
-
 
 
 /* ############################ */
@@ -70,14 +64,7 @@
 
 
 
-
-
-
-
-
-
-
-
+/* Responsivo */
 
 @media (max-width: 900px) {
   .content-wrapper {
@@ -85,9 +72,12 @@
   }
   .marketplace__contentWrapper {
     display: flex;
+    flex: 1;
+    text-align: center;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: space-between;
+    max-height: 70%;
   }
 
   .marketplace__contentWrapper {
@@ -99,5 +89,17 @@
     bottom: 4.8rem;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 1270px) {
+  .background {
+    background-position-x: 40vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .background {
+    background-position-x: 70vw;
   }
 }

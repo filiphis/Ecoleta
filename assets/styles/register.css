@@ -8,7 +8,6 @@
 /* ######### Register ######### */
 /* ############################ */
 .register {
-  width: 66.91%;
   margin: 0 auto;
   margin-top: 7.6rem;
   margin-bottom: 12rem;
@@ -53,7 +52,6 @@
   flex-grow: 2;
 }
 
-
 .entityData__label {
   margin-bottom: 0.8rem;
 }
@@ -68,7 +66,6 @@
   background-color: rgba(202, 202, 207, 0.6);
   color: #acacbc;
 }
-
 
 .entityData__option {
   background-color: var(--block);
@@ -92,8 +89,6 @@
 /* ####### collectItems ####### */
 /* ############################ */
 
-
-
 .collectItems {
   margin-bottom: 6.4rem;
 }
@@ -102,9 +97,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.collectItems__subtitle {
   margin-bottom: 4rem;
 }
 
@@ -151,4 +143,36 @@
 .collectItems__description {
   pointer-events: none;
   user-select: none
+}
+
+
+/* Responsivo */
+
+@media  (max-width: 900px) {
+  .register {
+    padding: 2.4rem;
+  }
+}
+
+@media  (max-width: 550px) {
+  .register__fieldGroup {
+    flex-direction: column;
+  }
+  .register__fieldGroup .register__field:nth-child(1) {
+    margin-right: 0;
+  }
+
+  .collectItems__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media  (max-width: 450px) {
+  .collectItems__list {
+    grid-template-columns: 1fr;
+  }
+
+  .register__button {
+    align-self: stretch;
+  }
 }

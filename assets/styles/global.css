@@ -39,7 +39,7 @@ a {
 }
 
 .content-wrapper {
-  width: 77.778%;
+  max-width: 112rem;
   margin: 0 auto;
   padding: 0 1rem;
   height: auto;
@@ -53,6 +53,9 @@ button:hover {
   cursor: pointer;
   transform: translateY(-.3rem);
 }
+
+
+/* Responsivo */
 
 @media (max-width: 900px) {
   .content-wrapper {
