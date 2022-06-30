@@ -11,6 +11,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/assets/images/simbolo.svg" type="image/x-icon">
+
   <link rel="stylesheet" href="/assets/styles/global.css">
   <link rel="stylesheet" href="/assets/styles/header.css">
   <link rel="stylesheet" href="/assets/styles/index.css">
@@ -23,10 +24,10 @@
   <div class="background">
     <div class="content-wrapper">
       <header class="header">
-        <a class="header__logoLink" href="index.html">
+        <a class="header__logoLink" href="/">
           <img class="header__logoImage" src="assets/images/logo.svg" alt="Logo ecoleta">
         </a>
-        <a class="header__registerWrapper header__registerLink" href="/register.html">
+        <a class="header__registerWrapper header__registerLink" href="/register">
           <span class="header__registerIcon"></span>
           Cadastre um ponto de coleta
         </a>
@@ -54,7 +55,7 @@
         <span class="modal__title">Pontos de coleta</span>
         <a data-closeModal class="modal__close" href="#">Fechar</a>
       </div>
-      <form data-js="register__form" class="register__form modal__form" action="/search-results.html" method="GET">
+      <form data-js="register__form" class="register__form modal__form" action="/search" method="GET">
         <label class="entityData__label sr-only" for="state">Estado</label>
         <select class="entityData__select modal__select" name="state" id="state" required>
           <option value="" selected>Selecione seu estado</option>

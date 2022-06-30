@@ -22,10 +22,10 @@
   <div class="background">
     <div class="content-wrapper">
       <header class="header">
-        <a class="header__logoLink" href="index.html">
+        <a class="header__logoLink" href="/">
           <img class="header__logoImage" src="assets/images/logo.svg" alt="Logo ecoleta">
         </a>
-        <a class="header__registerLink header__registerWrapper" href="/index.html">
+        <a class="header__registerLink header__registerWrapper" href="/">
           <span class="header__registerIcon"></span>
           Voltar para home
         </a>
@@ -33,13 +33,20 @@
       <main class="register">
         <h1 class="register__title">Cadastro do ponto de coleta</h1>
 
-        <form data-js="register__form" class="register__form" action="register.html" method="GET">
+        <form data-js="register__form" class="register__form" action="/register" method="GET">
           <fieldset class="entityData">
             <legend class="register__subtitle">Dados da entidade</legend>
 
-            <div class="register__field">
-              <label class="entityData__label" for="entity-name">Nome da entidade</label>
-              <input class="entityData__input" id="entity-name" name="entity-name" type="text" required>
+            <div class="register__fieldGroup">
+              <div class="register__field">
+                <label class="entityData__label" for="entity-name">Nome da entidade</label>
+                <input class="entityData__input" id="entity-name" name="entity-name" type="text" required>
+              </div>
+              <div class="register__field">
+                <label class="entityData__label" for="entity-name">Selecione uma imagem</label>
+                <input class="entityData__input" id="entity-name" name="entity-name" type="url" required
+                  placeholder="https://imageURL">
+              </div>
             </div>
             <div class="register__fieldGroup">
               <div class="register__field register__field--address">
@@ -122,7 +129,7 @@
   </div>
 
   <script src="/assets/scripts/getCities.js"></script>
-  <script src="assets/scripts/register_selectedItems.js"></script>
+  <script src="/assets/scripts/register_selectedItems.js"></script>
 </body>
 
 </html>

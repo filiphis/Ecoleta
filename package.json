@@ -1,0 +1,27 @@
+{
+  "name": "ecoleta",
+  "version": "1.0.0",
+  "description": "<!-- Empresas de coletas podem se cadastrar no site para que futuramente pessoas encontrem os pontos de coletas de forma eficiente. -->",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filiphis/Ecoleta.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filiphis/Ecoleta/issues"
+  },
+  "homepage": "https://github.com/filiphis/Ecoleta#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  }
+}
