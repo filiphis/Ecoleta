@@ -19,6 +19,8 @@
 
 <body>
 
+
+
   <div class="background">
     <div class="content-wrapper">
       <header class="header">
@@ -32,22 +34,29 @@
       </header>
 
       <main class="searchResults">
-        <h2 class="searchResults__title">Pontos encontrados</h2>
+        <h2 class="searchResults__title"><%= placesCount %> Pontos encontrados</h2>
 
         <ul class="searchResults__list">
+
+
+          <% places.forEach(place => { %>
           <li class="searchResults__item">
-            <img class="searchResults__image" src="/assets/images/colectoria.png" alt="colectoria">
-            <span class="searchResults__itemTitle">Colectoria</span>
-            <span class="searchResults__colectItems">Resíduos Eletrôniocos, Lâmpadas</span>
+            <img class="searchResults__image" src="<%= place.image %>" alt="<%= place.name %>">
+            <span class="searchResults__itemTitle"><%= place.name %></span>
+            <span class="searchResults__colectItems"><%= place.items %></span>
             <span class="searchResults__address">
-              Rio do Sul, Santa Catarina <br />
-              Guilherme Gemballa, Jardim América <br />
-              Nº 260 <br />
+              <%= place.city %>, <%= place.state %> <br />
+              <%= place.address_street %> <br />
+              Nº <%= place.address_number %> <br />
             </span>
           </li>
+          <% }) %>
 
 
-          <li class="searchResults__item">
+
+
+
+          <!-- <li class="searchResults__item">
             <img class="searchResults__image" src="/assets/images/papersider.png" alt="papersider">
             <span class="searchResults__itemTitle">Papersider</span>
             <span class="searchResults__colectItems">Papéis e Papelão</span>
@@ -67,7 +76,7 @@
               Guilherme Gemballa, Jardim América <br />
               Nº 260 <br />
             </span>
-          </li>
+          </li> -->
 
 
         </ul>
