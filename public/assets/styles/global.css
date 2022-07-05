@@ -102,6 +102,7 @@ body,
 /* END Font Family */
 
 
+
 /* Font Size */
 .entityData__label,
 .collectItems__text {
@@ -200,6 +201,13 @@ a,
   font-weight: bold;
 }
 /* END Weight */
+
+
+/* Text Align */
+.text_center {
+  text-align: center;
+}
+/* END Text Align */
 
 
 /* Border Radius */

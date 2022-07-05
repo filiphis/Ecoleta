@@ -32,6 +32,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
+  padding: 0 .5rem;
   text-align: center;
 }
 
@@ -39,6 +40,12 @@
   display: flex;
   flex-direction: column;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.47);
+  transition: transform 0.3s;
+}
+
+.searchResults__item:hover {
+  transform: scale(1.02);
+  /* cursor: pointer; */
 }
 
 .searchResults__image {
@@ -51,6 +58,10 @@
 .searchResults__itemTitle,
 .searchResults__colectItems {
   margin-bottom: 2.4rem;
+}
+
+.searchResults__title--message {
+  margin-top: 15vh;
 }
 
 .searchResults__address {

@@ -59,3 +59,13 @@ button:hover {
   transform: none;
   background-color: var(--greenpeace-hover);
 }
+
+.modal_image--success {
+  width: 6.4rem;
+  height: 6.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.modal__wapper--success .modal__content{
+  align-items: center;
+}

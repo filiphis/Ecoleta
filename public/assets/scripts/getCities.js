@@ -8,7 +8,7 @@ const getBrazilianStates = async () => {
   const brazilianStates = await response.json();
 
   brazilianStates.forEach((state) => {
-    stateSelectElement.innerHTML += `<option class="entityData__option" value="${state.id}">${state.nome}</option>`;
+    stateSelectElement.innerHTML += `<option class="entityData__option" data-id="${state.id}" value="${state.nome}">${state.nome}</option>`;
   });
 };
 
@@ -17,7 +17,9 @@ getBrazilianStates();
 stateSelectElement.addEventListener("change", getCitiesByStateId);
 
 async function getCitiesByStateId(event) {
-  const selectedStateId = event.target.value;
+  const selectedStateId = event.target.selectedOptions[0].dataset.id;
+  // console.log(event.target[1].outerText);
+  console.log(selectedStateId);
 
   const response = await fetch(
     `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${selectedStateId}/municipios`

@@ -25,6 +25,7 @@ const getSelectedCollectionItems = () => {
   );
   hidenInputToSendValues.value = getSelectItemsValues;
 
+  console.log(getSelectItemsValues);
   return getSelectItemsValues;
 };
 
@@ -33,6 +34,5 @@ colectItemsElements.forEach((colectItemsLi) => {
 });
 
 registerFormElement.addEventListener("submit", (event) => {
-  event.preventDefault();
   getSelectedCollectionItems();
 });

@@ -9,6 +9,7 @@ server.use(express.static("public"));
 server.set("view engine", "ejs");
 server.set("views", path.join(__dirname, "views"));
 
+server.use(express.urlencoded({ extended: true }));
 server.use(routes);
 
 // server.get("/", (req, res) => {

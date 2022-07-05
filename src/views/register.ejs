@@ -33,18 +33,18 @@
       <main class="register">
         <h1 class="register__title">Cadastro do ponto de coleta</h1>
 
-        <form data-js="register__form" class="register__form" action="/register" method="GET">
+        <form data-js="register__form" class="register__form" action="/register" method="POST">
           <fieldset class="entityData">
             <legend class="register__subtitle">Dados da entidade</legend>
 
             <div class="register__fieldGroup">
               <div class="register__field">
-                <label class="entityData__label" for="entity-name">Nome da entidade</label>
-                <input class="entityData__input" id="entity-name" name="entity-name" type="text" required>
+                <label class="entityData__label" for="name">Nome da entidade</label>
+                <input class="entityData__input" id="name" name="name" type="text" required>
               </div>
               <div class="register__field">
-                <label class="entityData__label" for="entity-name">Selecione uma imagem</label>
-                <input class="entityData__input" id="entity-name" name="entity-name" type="url" required
+                <label class="entityData__label" for="image">Selecione uma imagem</label>
+                <input class="entityData__input" id="image" name="image" type="url" required
                   placeholder="https://imageURL">
               </div>
             </div>
@@ -85,40 +85,43 @@
             <div class="collectItems__wrapper">
               <ul class="collectItems__list">
 
-                <li class="collectItems__item" data-collectItemId="1" data-collectItemName="lampadas"
+                <li class="collectItems__item" data-collectItemId="Lâmpadas" data-collectItemName="lampadas"
                   data-collectItemName="lampadas">
                   <img class="collectItems__image" src="/assets/images/lampadas.svg" alt="Lâmpadas">
                   <span class="collectItems__description">Lâmpadas</span>
                 </li>
 
-                <li class="collectItems__item" data-collectItemId="2" data-collectItemName="pilhas-baterias">
+                <li class="collectItems__item" data-collectItemId="Pilhas e Baterias"
+                  data-collectItemName="pilhas-baterias">
                   <img class="collectItems__image" src="/assets/images/baterias.svg" alt="Pilhas e Baterias">
                   <span class="collectItems__description">Pilhas e Baterias</span>
                 </li>
 
-                <li class="collectItems__item" data-collectItemId="3" data-collectItemName="papeis-papelao">
+                <li class="collectItems__item" data-collectItemId="Papéis e Papelão"
+                  data-collectItemName="papeis-papelao">
                   <img class="collectItems__image" src="/assets/images/papeis-papelao.svg" alt="Papéis e Papelão">
                   <span class="collectItems__description">Papéis e Papelão</span>
                 </li>
 
-                <li class="collectItems__item" data-collectItemId="4" data-collectItemName="eletronicos">
+                <li class="collectItems__item" data-collectItemId="Resíduos Eletrônicos"
+                  data-collectItemName="eletronicos">
                   <img class="collectItems__image" src="/assets/images/eletronicos.svg" alt="Resíduos Eletrônicos">
                   <span class="collectItems__description">Resíduos Eletrônicos</span>
                 </li>
 
-                <li class="collectItems__item" data-collectItemId="5" data-collectItemName="organicos">
+                <li class="collectItems__item" data-collectItemId="Resíduos Orgânicos" data-collectItemName="organicos">
                   <img class="collectItems__image" src="/assets/images/organincos.svg" alt="Resíduos Orgânicos">
                   <span class="collectItems__description">Resíduos Orgânicos</span>
                 </li>
 
-                <li class="collectItems__item" data-collectItemId="6" data-collectItemName="oleo">
+                <li class="collectItems__item" data-collectItemId="Óleo de Cozinha" data-collectItemName="oleo">
                   <img class="collectItems__image" src="/assets/images/oleo.svg" alt="Óleo de Cozinha">
                   <span class="collectItems__description">Óleo de Cozinha</span>
                 </li>
 
               </ul>
 
-              <input data-js="collectItemsSelected" type="hidden" name="">
+              <input data-js="collectItemsSelected" type="hidden" name="selectedItems">
             </div>
           </fieldset>
 

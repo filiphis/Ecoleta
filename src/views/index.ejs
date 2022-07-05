@@ -21,11 +21,12 @@
 
 <body>
 
+
   <div class="background">
     <div class="content-wrapper">
       <header class="header">
         <a class="header__logoLink" href="/">
-          <img class="header__logoImage" src="assets/images/logo.svg" alt="Logo ecoleta">
+          <img class="header__logoImage" src="/assets/images/logo.svg" alt="Logo ecoleta">
         </a>
         <a class="header__registerWrapper header__registerLink" href="/register">
           <span class="header__registerIcon"></span>
@@ -70,15 +71,27 @@
   </div>
 
 
-
-  <!-- <div class="modal__wapper">
+  <% if (saved) { %>
+  <div class="modal__wapper modal__wapper--success active">
     <div class="modal__content">
-      
+      <img class="modal_image--success" src="/assets/images/register-success.svg" alt="register success">
+      <span class="modal__title">Cadastro concluído!</span>
     </div>
-  </div> -->
+  </div>
+  <script>
+    setTimeout(() => {
+      window.location = '/';
+    }, 2000);
+  </script>
+  <% } %>
+
+
+
+
 
   <script src="/assets/scripts/getCities.js"></script>
   <script src="/assets/scripts/modal.js"></script>
+
 </body>
 
 </html>
