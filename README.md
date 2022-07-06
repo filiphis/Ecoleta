@@ -1,6 +1,6 @@
 # Ecoleta
 
-<h1 align="center" style="background-color: white;"><img src=".github/logo.svg" alt="Ecoleta"> Ecoleta</h1>
+<h1 align="center" style="background-color: white;"><img src=".github/favicon.svg" alt="Ecoleta"> Ecoleta</h1>
 
 <!-- ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/13370451/174902862-34808dd0-5086-4385-90e1-f825ecfb6621.gif) -->
 
